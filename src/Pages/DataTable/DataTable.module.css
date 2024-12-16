@@ -1,0 +1,108 @@
+.tableWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableHeader {
+  margin-top: 0.2em;
+  text-align: center;
+}
+
+.table {
+  padding: 1em;
+}
+
+.rowHeader {
+  padding: 12px 15px;
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.userId {
+  text-align: center;
+}
+
+.data {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 14px;
+  color: #333;
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 10%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 20%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 70%;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.errorMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f73333;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .rowHeader {
+    text-align: center;
+  }
+  .table {
+    display: block;
+    width: 100%;
+    border: 0;
+  }
+  .table th:nth-child(1),
+  .table td:nth-child(1),
+  .table th:nth-child(2),
+  .table td:nth-child(2),
+  .table th:nth-child(3),
+  .table td:nth-child(3) {
+    width: auto;
+  }
+
+  th,
+  .data {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .data::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    text-align: center;
+  }
+}

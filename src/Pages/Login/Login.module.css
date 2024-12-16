@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #a5ec75;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cellContainer {
+  margin: 1em;
+}
+
+.input {
+  padding: 0.5em;
+}
+
+.errorMessage {
+  color: #ff0000;
+  font-size: 0.9em;
+  margin: 0.5px;
+}

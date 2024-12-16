@@ -1,0 +1,21 @@
+.button {
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1.5em;
+  padding: 0.5em 1em;
+  background-color: #2ea44f;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background-color: #787c79;
+}
+
+.buttonRed {
+  background-color: #f02929;
+}

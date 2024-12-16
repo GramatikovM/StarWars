@@ -1,0 +1,7 @@
+.paginationContainer {
+  display: flex;
+}
+
+.activePage {
+  background-color: #f59426;
+}
